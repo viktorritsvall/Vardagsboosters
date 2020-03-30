@@ -1,9 +1,14 @@
+/* Gäller hela dokumentet! */
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+
+
+
+/* Datoranpassad version! */
   }
   body{
     font-family: raleway;
@@ -53,8 +58,134 @@
   #check{
     display: none;
   }
+  .center{
+    padding: 250px 0;
+    text-align: center;
+    font-size: 80px;
+    color: #2c3e50;
+    }
+  .title{
+    text-align: center;
+    margin-top: 60px;
+    color: #2c3e50;
+    font-size: 50px;
+  }
+  .lista{
+    margin: 0px;
+    padding: 0px;
+    background:#2c3e50;
+    width: 100%;
+  }
+  .position{
+    position: relative;
+    width: 1000px;
+    margin: 100px auto 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .points{
+    font-weight: bold;
+  }
+  section ul li{
+    display: flex;
+    padding: 30px 50px;
+    color: white;
+    transform: .5s;
+    font-size: 25px;
+  }
+  section ul li:nth-child(1){
+    background: rgba(255, 255, 255, .6);
+  }
+  section ul li:nth-child(2){
+    background: rgba(255, 255, 255, .4);
+  }
+  section ul li:nth-child(3){
+    background: rgba(255, 255, 255, .2);
+  }
+  section ul li span:nth-child(1){
+    width: 100px;
+  }
+  section ul li span:nth-child(2){
+    width: 700px;
+  }
+  section ul li span:nth-child(3){
+    width: 100px;
+    text-align: right;
+  }
+  section ul li span:nth-child(4){
+    width: 50px;
+    text-align: right;
+  }
+  section ul li:hover{
+    transform: scale(1.06);
+    background: #2c3e50;
+  }
+  .wrapper{
+    margin-top: 10%;
+  }
+  .wrapper h1{
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .team{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .team .team_member{
+    background: #253745;
+    margin: 15px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 30px;
+    line-height: 20px;
+    color: white;  
+    position: relative;
+    border-radius: 20px;
+  }
+  .team .team_member h3{
+    color: white;
+    font-size: 28px;
+    margin-top: 50px;
+  }
+  .team .team_member p.role{
+    color: white;
+    margin: 12px 0;
+    font-size: 12px;
+    font-style: italic;
+  }
+  .team .team_member .team_img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .team .team_member .team_img img{
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 70px;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #253745;
+    color: white;
+    text-align: center;
+    height: 150px;
+  }
+  .footer p{
+    padding-top: 70px;
+  }
+
+/* Ipadanpassad version! */
   @media (max-width: 952px){
-  .logo{
+    .logo{
       font-size: 30px;
       padding-left: 50px;
       cursor: pointer;
@@ -62,12 +193,69 @@
     nav ul li a{
       font-size: 16px;
     }
+    .lista{
+      margin: 0;
+      padding: 0;
+      background:#2c3e50;
+      width: 100%;
+    }
+    .position{
+      position: relative;
+      width: 500px;
+      margin: 100px auto 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    section ul li{
+      display: flex;
+      padding: 20px 20px;
+      color: white;
+      transform: .5s;
+      font-size:17px;
+    }
+    section ul li:nth-child(1){
+      background: rgba(255, 255, 255, .6);
+    }
+    section ul li:nth-child(2){
+      background: rgba(255, 255, 255, .4);
+    }
+    section ul li:nth-child(3){
+      background: rgba(255, 255, 255, .2);
+    }
+    section ul li span:nth-child(1){
+      width: 40px;
+    }
+    section ul li span:nth-child(2){
+      width: 300px;
+    }
+    section ul li span:nth-child(3){
+      width: 100px;
+      text-align: right;
+    }
+    section ul li span:nth-child(4){
+      width: 40px;
+      text-align: right;
+    }
+    section ul li:hover{
+      transform: scale(1.06);
+      background: #2c3e50;
+    } 
+    header{
+      z-index: 999;
+    }
+    section ul li{
+      z-index: -1;
+    }
   }
+
+
+
+/* Mobilanpassad version! */
   @media (max-width: 858px){
     .checkbtn{
       display: block;
     }
-    ul{
+    header ul{
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -92,133 +280,57 @@
     #check:checked ~ ul{
       left: 0;
     }
-  }
-    .center{
-    padding: 250px 0;
-    text-align: center;
-    font-size: 80px;
-    color: #2c3e50;
-    }
-
-    .title{
-      text-align: center;
-      margin-top: 60px;
-      color: #2c3e50;
-      font-size: 50px;
-    }
-
     .lista{
       margin: 0;
       padding: 0;
       background:#2c3e50;
       width: 100%;
     }
-
     .position{
       position: relative;
-      width: 450px;
+      width: 350px;
       margin: 100px auto 0;
       box-sizing: border-box;
       cursor: pointer;
     }
-
     section ul li{
       display: flex;
-      padding: 10px 20px;
+      padding: 20px 20px;
       color: white;
       transform: .5s;
+      font-size:17px;
     }
-
     section ul li:nth-child(1){
       background: rgba(255, 255, 255, .6);
     }
-
     section ul li:nth-child(2){
       background: rgba(255, 255, 255, .4);
     }
-
     section ul li:nth-child(3){
       background: rgba(255, 255, 255, .2);
     }
-
     section ul li span:nth-child(1){
-      width: 30px;
+      width: 40px;
     }
-
     section ul li span:nth-child(2){
-      width: 200px;
+      width: 300px;
     }
-
     section ul li span:nth-child(3){
       width: 100px;
       text-align: right;
     }
-
     section ul li span:nth-child(4){
-      width: 70px;
+      width: 50px;
       text-align: right;
     }
-
     section ul li:hover{
       transform: scale(1.06);
       background: #2c3e50;
+    } 
+    header{
+      z-index: 999;
     }
-
-    @media (max-width: 858px){
-      .lista{
-        margin: 0;
-        padding: 0;
-        background:#2c3e50;
-        width: 100%;
-      }
-  
-      .position{
-        position: relative;
-        width: 150px;
-        margin: 100px auto 0;
-        box-sizing: border-box;
-        cursor: pointer;
-      }
-  
-      section ul li{
-        display: flex;
-        padding: 10px 20px;
-        color: white;
-        transform: .5s;
-      }
-  
-      section ul li:nth-child(1){
-        background: rgba(255, 255, 255, .6);
-      }
-  
-      section ul li:nth-child(2){
-        background: rgba(255, 255, 255, .4);
-      }
-  
-      section ul li:nth-child(3){
-        background: rgba(255, 255, 255, .2);
-      }
-  
-      section ul li span:nth-child(1){
-        width: 30px;
-      }
-  
-      section ul li span:nth-child(2){
-        width: 200px;
-      }
-  
-      section ul li span:nth-child(3){
-        width: 100px;
-        text-align: right;
-      }
-  
-      section ul li span:nth-child(4){
-        width: 70px;
-        text-align: right;
-      }
-  
-      section ul li:hover{
-        transform: scale(1.06);
-        background: #2c3e50;
-      }
-}
+    section ul li{
+      z-index: -1;
+    }
+  }
