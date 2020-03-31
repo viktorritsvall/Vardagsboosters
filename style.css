@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    position: relative;
 
 
 
@@ -121,7 +122,7 @@
     background: #2c3e50;
   }
   .wrapper{
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .wrapper h1{
     font-size: 52px;
@@ -136,7 +137,7 @@
     flex-wrap: wrap;
   }
   .team .team_member{
-    background: #253745;
+    background: #2c3e50;
     margin: 15px;
     margin-bottom: 50px;
     width: 300px;
@@ -174,7 +175,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #253745;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     height: 150px;
@@ -182,6 +183,24 @@
   .footer p{
     padding-top: 70px;
   }
+  .team{
+    padding-bottom: 150px;
+  }
+  .fab{
+  padding: 40px;
+  padding-top: 100px;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2c3e50;
+  font-size: 70px;
+}
+.fab:hover{
+  opacity: 0.7;
+}
+.icon{
+  text-align: center;
+}
 
 /* Ipadanpassad version! */
   @media (max-width: 952px){
@@ -205,6 +224,7 @@
       margin: 100px auto 0;
       box-sizing: border-box;
       cursor: pointer;
+      z-index: -1;
     }
     section ul li{
       display: flex;
@@ -243,8 +263,8 @@
     header{
       z-index: 999;
     }
-    section ul li{
-      z-index: -1;
+    .team{
+      padding-bottom: 150px;
     }
   }
 
@@ -292,6 +312,7 @@
       margin: 100px auto 0;
       box-sizing: border-box;
       cursor: pointer;
+      z-index: -1;
     }
     section ul li{
       display: flex;
@@ -330,7 +351,7 @@
     header{
       z-index: 999;
     }
-    section ul li{
-      z-index: -1;
+    .team{
+      padding-bottom: 150px;
     }
   }
