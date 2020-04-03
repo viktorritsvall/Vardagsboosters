@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="bilder/vb_logotyp" href="bilder/vb_logotyp.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
 
   <body>
@@ -30,21 +31,21 @@
       <div>
         <h1 class="title">Hall Of Books</h1>
       </div>      
-      <div class="bredd">
+      <div class="bredd dropdown">
         <ul class="lista position">
-          <li class="text number">
+          <li id="first">
             <span class="number">1</span>
             <span class="name">Factfullness</span>
             <span class="points">5/5</span>
             <span class="badge"><i class="fas fa-book"></i></span>
           </li>
-          <li>
+          <li id="second">
             <span class="number">2</span>
             <span class="name">Freakonomics</span>
             <span class="points">4/5</span>
             <span class="badge"><i class="fas fa-book"></i></span>
           </li>
-          <li>
+          <li id="third">
             <span class="number">3</span>
             <span class="name">Elon Musk</span>
             <span class="points">3,5/5</span>
@@ -52,6 +53,46 @@
           </li>
         </ul>
       </div>
+      <!-- First Modal -->
+      <div id="first-modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close-one">&times;</span>
+              <h2>Factfullness</h2>
+            </div>
+            <div class="modal-body">
+              <p>Mycket bra bok</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- second Modal -->
+      <div id="second-modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close-two">&times;</span>
+              <h2>Freakonomics</h2>
+            </div>
+            <div class="modal-body">
+              <p>Mycket bra bok</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- third Modal -->
+      <div id="third-modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close-three">&times;</span>
+              <h2>Elon Musk</h2>
+            </div>
+            <div class="modal-body">
+              <p>Mycket bra bok</p>
+            </div>
+          </div>
+        </div>
+        
+
     </section>
 
     <footer class="footer">
