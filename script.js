@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function modal(){
     // close the modal
     var closeModalFirst = document.getElementsByClassName("close-one")[0];
     var closeModalSecond = document.getElementsByClassName("close-two")[0];
-    var closeModalThird = document.getElementsByClassName("close-third")[0];
+    var closeModalThird = document.getElementsByClassName("close-three")[0];
   
     // modal div 
     var firstModal = document.getElementById("first-modal");
