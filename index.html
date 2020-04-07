@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="bilder/vb_logotyp" href="bilder/vb_logotyp.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   
   <body>
@@ -27,13 +28,6 @@
         </nav>
     </header>
 
-    <!-- Rubrik -->
-    <section>
-        <div>
-            <h1 class="center">Boosta din vardag!</h1>
-        </div>
-    </section>
-
     <!-- Quiz -->
     <section class="container">
       <header class="header-quiz">
@@ -43,28 +37,29 @@
         <!-- Fråga 1 -->
         <form class="questionForm" id="q1" data-question="1">
           <h3>1. Hur många timmar sägs det ta att bli bra på någonting?</h3>
-          <ul class="lista position">
+          <ul class="lista form-position">
             <li class="books list-style"><input type="radio" name="q1" value="a" />1000 timmar</li>
             <li class="books list-style"><input type="radio" name="q1" value="b" />5000 timmar</li>
             <li class="books list-style"><input type="radio" name="q1" value="c" />10000 timmar</li>
           </ul>
-          <button id="submit">Nästa</button>
+          <button class="submit" id="submit">Nästa</button>
         </form>
         
         <!-- Fråga 2 -->
         <form class="questionForm" id="q2" data-question="2">
             <h3>2. Vad är viktigast för att nå framgång?</h3>
-            <ul class="lista position">
+            <ul class="lista form-position">
               <li class="books list-style"><input type="radio" name="q2" value="a" />Pengar</li>
-              <li class="books list-style"><input type="radio" name="q2" value="b" />Relationer</li>
-              <li class="books list-style"><input type="radio" name="q2" value="c" />Mindset</li>
+              <li class="books list-style"><input type="radio" name="q2" value="b" />Mindset</li>
+              <li class="books list-style"><input type="radio" name="q2" value="c" />Relationer</li>
             </ul>
-            <button id="submit">Nästa</button>
+            <button class="submit" id="submit">Nästa</button>
           </form>
           <div id="results"></div>
           <br>
       </main>
       <script src="https://code.jquery.com/jquery-1.11.9.min.js"></script>
+      <script src="jquery.js"></script>
       <script src="script.js"></script>
     </section>
 
