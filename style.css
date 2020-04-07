@@ -9,11 +9,21 @@
 
 
 
+
+
+
+
+
+
+
 /* Datoranpassad version! */
+  /* Body */
   }
   body{
     font-family: raleway;
   }
+  
+  /* Navbar */
   nav{
     background: #2c3e50;
     height: 80px;
@@ -59,18 +69,16 @@
   #check{
     display: none;
   }
-  .center{
-    padding: 250px 0;
-    text-align: center;
-    font-size: 80px;
-    color: #2c3e50;
-    }
+
+  /* Titeltext */
   .title{
     text-align: center;
     margin-top: 60px;
     color: #2c3e50;
     font-size: 50px;
   }
+
+  /* Lista */
   .lista{
     margin: 0px;
     padding: 0px;
@@ -121,10 +129,12 @@
     transform: scale(1.06);
     background: #2c3e50;
   }
-  .wrapper{
+
+  /* Om oss */
+  .om-oss{
     margin-top: 5%;
   }
-  .wrapper h1{
+  .om-oss h1{
     font-size: 52px;
     margin-bottom: 60px;
     text-align: center;
@@ -170,6 +180,8 @@
     padding: 15px;
     border-radius: 70px;
   }
+  
+  /* Footer */
   .footer {
     position: fixed;
     left: 0;
@@ -185,6 +197,8 @@
   }
   .team{
     padding-bottom: 150px;
+
+  /* Social Media */
   }
   .fab{
   padding: 40px;
@@ -201,6 +215,7 @@
 .icon{
   text-align: center;
 }
+
 /* MODAL */
 .modal{
   display: none;
@@ -214,6 +229,7 @@
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4); 
 }
+
 /* Modal Content */
 .modal-content{
   position: relative;
@@ -229,6 +245,7 @@
   animation-duration: 0.4s;
   bottom: 35px;
 }
+
 /* Add Animation */
 @-webkit-keyframes animatetop{
   from {top:-300px; opacity:0} 
@@ -238,7 +255,8 @@
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
-/* The Close Button */
+
+/* Close Button */
 .close-one, .close-two, .close-three{
   color: white;
   float: right;
@@ -307,8 +325,18 @@ a{
 }
 
 
+
+
+
+
+
+
+
+
 /* Ipadanpassad version! */
   @media (max-width: 952px){
+    
+    /* Navbar */
     .logo{
       font-size: 30px;
       padding-left: 50px;
@@ -317,6 +345,8 @@ a{
     nav ul li a{
       font-size: 16px;
     }
+
+    /* Lista */
     .lista{
       margin: 0;
       padding: 0;
@@ -365,12 +395,15 @@ a{
       transform: scale(1.06);
       background: #2c3e50;
     } 
-    header{
-      z-index: 999;
-    }
     .team{
       padding-bottom: 150px;
     }
+    
+    /* Header */
+    header{
+      z-index: 999;
+    }
+
     /* Modal Content */
     .modal-content {
       position: relative;
@@ -384,13 +417,16 @@ a{
       animation-name: animatetop;
       animation-duration: 0.4s
     }
-    /* The Close Button */
+
+    /* Close Button */
     .close-one, .close-two, .close-three{
       color: white;
       float: right;
       font-size: 40px;
       font-weight: bold;
     }
+
+    /* Quiz */
     .container{
       width: 100%;
     }
@@ -399,8 +435,15 @@ a{
 
 
 
+
+
+
+
+
+
 /* Mobilanpassad version! */
   @media (max-width: 858px){
+    /* Navbar */
     .checkbtn{
       display: block;
     }
@@ -429,6 +472,8 @@ a{
     #check:checked ~ ul{
       left: 0;
     }
+
+    /* Lista */
     .lista{
       margin: 0;
       padding: 0;
@@ -477,12 +522,15 @@ a{
       transform: scale(1.06);
       background: #2c3e50;
     } 
-    header{
-      z-index: 999;
-    }
     .team{
       padding-bottom: 150px;
     }
+
+    /* Header */
+    header{
+      z-index: 999;
+    }
+
     /* Modal Content */
     .modal-content {
       position: relative;
@@ -496,13 +544,16 @@ a{
       animation-name: animatetop;
       animation-duration: 0.4s
     }
-    /* The Close Button */
+
+    /* Close Button */
     .close-one, .close-two, .close-three{
       color: white;
       float: right;
       font-size: 40px;
       font-weight: bold;
     }
+
+    /* Quiz */
     .form-position{
       position: relative;
       width: 450px;

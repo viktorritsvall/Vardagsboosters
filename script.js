@@ -1,3 +1,4 @@
+// Hall Of Books
 document.addEventListener("DOMContentLoaded", function modal(){
   // li in Hall of Books
   let first = document.getElementById("first");
@@ -54,6 +55,13 @@ document.addEventListener("DOMContentLoaded", function modal(){
       }
     }
 });
+
+
+
+
+
+
+
 
 
 
