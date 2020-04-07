@@ -77,35 +77,34 @@ function init(){
     //Show first question
     $('#q1').show();
 
-    $('#q1 #submit').click(function(){
-      $('.questionForm').hide();
-      process('q1');
-      $('#q2').fadeIn(300);
-      return false;
-  });
-
-  $('#q2 #submit').click(function(){
-      $('.questionForm').hide();
-      process('q2');
-      $('#results').fadeIn(300);
-      return false;
-  });
+    $('.questionForm #submit').click(function(){
+        // Get data attribute
+        current = $(this).parents('Form:first').data('question');
+        next = $(this).parents('Form:first').data('question')+1;
+        // Hide all questions
+        $('.questionForm').hide();
+        // Show next question
+        $('#q'+next+'').fadeIn(300);
+        process(''+current+'');
+        return false;
+    });
 });
 
 // Process the answers
-function process(q){
-  if(q == "q1"){
-    var submitted = $('input[name=q1]:checked').val();
-    if(submitted == sessionStorage.a1){
-      score++;
+function process(n){
+    // Get input value
+    var submitted = $('input[name=q'+n+']:checked').val();
+    if(submitted == sessionStorage.getItem('a'+n+'')){
+        score = score + point;
     }
-  }
-  if(q == "q2"){
-    var submitted = $('input[name=q2]:checked').val();
-    if(submitted == sessionStorage.a2){
-      score++;
+  
+  if(n == total){
+    $('#results').html('<h3>Ditt resultat är: '+score+' av '+highest+'</h3><a href="index.html">Gör quiz igen</a>');
+    if(score == highest){
+      $('#results').append('<p>Du är framgångsrik!</p>');
+    } else if(score == highest - point || score == highest - point - point){
+      $('#results').append('<p>Bättre lycka nästa gång!</p>');
     }
-    $('#results').html('<h3>Ditt resultat är: '+score+' av 2</h3><a href="index.html">Gör quiz igen</a>');
   }
   return false;
 }
