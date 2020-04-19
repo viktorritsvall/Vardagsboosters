@@ -1,0 +1,468 @@
+/* Gäller hela dokumentet! */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+
+
+
+
+
+
+
+
+
+
+/* Datoranpassad version! */
+  /* Body */
+  }
+  body{
+    font-family: raleway;
+  }
+  
+  /* Navbar */
+  nav{
+    background: #2c3e50;
+    height: 80px;
+    width: 100%;
+  }
+  .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  nav a{
+    color: #2c3e50;
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  /* Titeltext */
+  .title{
+    text-align: center;
+    margin-top: 60px;
+    color: #2c3e50;
+    font-size: 50px;
+  }
+
+  /* Lista */
+  .lista{
+    margin: 0px;
+    padding: 0px;
+    background:#2c3e50;
+    width: 100%;
+  }
+  .position{
+    position: relative;
+    width: 1000px;
+    margin: 100px auto 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .book-points{
+    font-weight: bold;
+  }
+   .books{
+    display: flex;
+    padding: 30px 50px;
+    color: white;
+    transform: .5s;
+    font-size: 25px;
+  }
+  section ul li:nth-child(1){
+    background: #2c3e50;
+  }
+  section ul li:nth-child(2){
+    background: #2c3e50;
+  }
+  section ul li:nth-child(3){
+    background: #2c3e50;
+  }
+  section ul li span:nth-child(1){
+    width: 100px;
+  }
+  section ul li span:nth-child(2){
+    width: 700px;
+  }
+  section ul li span:nth-child(3){
+    width: 100px;
+    text-align: right;
+  }
+  section ul li span:nth-child(4){
+    width: 50px;
+    text-align: right;
+  }
+  section ul li:hover{
+    background: #43759b;
+  }  
+  .team{
+    padding-bottom: 150px;
+  }
+  
+  /* Footer */
+  .footer {
+    position: fixed;
+    margin-top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    height: 150px;
+  }
+  .footer p{
+    padding-top: 70px;
+  }
+
+  /* Quiz */
+  .list-style{
+    list-style-type: none;
+  }
+  .container{
+    width: 70%;
+    margin: 20px auto;
+    overflow: auto;
+    padding-bottom: 200px;
+    padding-top: 40px;
+  }
+  .header-quiz{
+    color: #2c3e50;
+    padding-bottom: 30px;
+    overflow: auto;
+    font-size: 47px;
+    text-align: center;
+  }
+  .form-position{
+    position: relative;
+    width: 1000px;
+    margin: 50px auto 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  } 
+  .submit{
+    background-color: #2c3e50;
+    color:white;
+    margin-top: 20px;
+    border: none;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 50px auto 0;
+    display: flex;
+  }
+  .quiz-heading{
+    color: #2c3e50;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 60px;
+    color: #2c3e50;
+  }
+  .form-radio{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #666;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;     
+    margin-right: 45px;
+    outline: none;
+  }
+  .form-radio:checked::before{
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+  }
+  .form-radio:hover{
+    background-color: #f7f7f7;
+  }
+  .form-radio:checked{
+    background-color: #f1f1f1;
+  }
+  .try-again{
+    color: #f1f1f1;
+  }
+  .try-again-button{
+    display: flex;
+    top:30px;
+    padding: 20px 30px;
+    color: white;
+    font-size: 25px;
+    background-color: #2c3e50;
+    margin: auto;
+    border-style: none;
+  }
+  .outcome{
+    margin-top: 90px;
+    font-size: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Ipadanpassad version! */
+  @media (max-width: 952px){
+    
+    /* Navbar */
+    .logo{
+      font-size: 30px;
+      padding-left: 50px;
+      cursor: pointer;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+    nav a{
+      color: #2c3e50;
+      font-size: 30px;
+    }
+
+    /* Lista */
+    .lista{
+      margin: 80px;
+      padding: 0;
+      background:#2c3e50;
+      width: 80%;
+    }
+    .position{
+      position: relative;
+      width: 500px;
+      margin: 100px auto 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    section ul li{
+      display: flex;
+      padding: 20px 20px;
+      color: white;
+      transform: .5s;
+      font-size:17px;
+    }
+    section ul li:nth-child(1){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(2){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(3){
+      background: #2c3e50;
+    }
+    section ul li span:nth-child(1){
+      width: 40px;
+    }
+    section ul li span:nth-child(2){
+      width: 300px;
+    }
+    section ul li span:nth-child(3){
+      width: 100px;
+      text-align: right;
+    }
+    section ul li span:nth-child(4){
+      width: 40px;
+      text-align: right;
+    }
+    section ul li:hover{
+      background: #43759b;
+    } 
+    .team{
+      padding-bottom: 150px;
+    }
+    
+    /* Header */
+    header{
+      z-index: 999;
+    }
+
+    /* Quiz */
+    .container{
+      width: 100%;
+    }
+    .quiz-heading{
+      color: #2c3e50;
+      font-weight: 600;
+      align-content: center;
+      font-size: 20px;
+      padding: 30px;
+      }
+
+    /* Landing Page */
+    .landing-heading{
+      font-size: 40px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* Mobilanpassad version! */
+  @media (max-width: 858px){
+    /* Navbar */
+    .checkbtn{
+      display: block;
+    }
+    header ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    .links:active{
+      background: none;
+      color: #43759b;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+    /* Lista */
+    .lista{
+      margin: 0;
+      padding: 0;
+      background:#2c3e50;
+      width: 100%;
+    }
+    .position{
+      position: relative;
+      width: 350px;
+      margin: 100px auto 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    section ul li{
+      display: flex;
+      padding: 20px 20px;
+      color: white;
+      transform: .5s;
+      font-size:17px;
+    }
+    section ul li:nth-child(1){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(2){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(3){
+      background: #2c3e50;
+    }
+    section ul li span:nth-child(1){
+      width: 40px;
+    }
+    section ul li span:nth-child(2){
+      width: 300px;
+    }
+    section ul li span:nth-child(3){
+      width: 100px;
+      text-align: right;
+    }
+    section ul li span:nth-child(4){
+      width: 50px;
+      text-align: right;
+    }
+    section ul li:hover{
+      background: #43759b;
+    } 
+    .team{
+      padding-bottom: 150px;
+    }
+
+    /* Header */
+    header{
+      z-index: 999;
+    }
+
+    /* Quiz */
+    .form-position{
+      position: relative;
+      width: 450px;
+      margin: 30px auto 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    h3{
+      color: #2c3e50;
+      padding-left: 25px;     
+    }
+    .submit{
+      margin-left: 25px;
+    }
+    a nav{
+      color: #2c3e50;
+      font-size: 40px;
+      padding-left: 25px;
+    }
+    .quiz-heading{
+      color: #2c3e50;
+      font-weight: 600;
+      align-content: center;
+      font-size: 20px;
+      padding: 30px;
+    }
+  }

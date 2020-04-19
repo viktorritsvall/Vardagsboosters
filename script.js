@@ -1,6 +1,11 @@
 // Hall Of Books
 document.addEventListener("DOMContentLoaded", function modal(){
-  // li in Hall of Books
+
+
+
+
+
+    // li in Hall of Books
   let first = document.getElementById("first");
   let second = document.getElementById("second");
   let third = document.getElementById("third");
@@ -19,10 +24,14 @@ document.addEventListener("DOMContentLoaded", function modal(){
   // first Modal
   first.onclick = function(event) {
       firstModal.style.display = "block";
+      console.log('fff');
     }
+
   closeModalFirst.onclick = function(event) {
     firstModal.style.display = "none";
+    console.log('ffff');
   }
+
   window.onclick = function(event) {
       if (event.target === firstModal) {
         firstModal.style.display = "none";
@@ -107,15 +116,17 @@ function process(n){
     }
   
   if(n == total){
-    $('#results').html('<h3>Ditt resultat är: '+score+' av '+highest+'</h3><a href="index.html">Gör quiz igen</a>');
+    $('#results').html('<h2 class="quiz-heading">Ditt resultat är: '+score+' av '+highest+'</h2><button class="try-again-button"><a class="try-again" href="index.html">Gör quiz igen</a></button>');
     if(score == highest){
-      $('#results').append('<p>Du är framgångsrik!</p>');
+      $('#results').append('<h1 class="title outcome">Du är framgångsrik!</h1>');
     } else if(score == highest - point || score == highest - point - point){
-      $('#results').append('<p>Bättre lycka nästa gång!</p>');
+      $('#results').append('<h1 class="title outcome">Bättre lycka nästa gång!</h1>');
     }
   }
   return false;
 }
+
+
 
 // Add event listener
 window.addEventListener('load', init, false);

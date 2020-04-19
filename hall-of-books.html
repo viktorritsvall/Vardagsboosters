@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>Vardags Boosters</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hall-of-books.css">
     <link rel="shortcut icon" type="bilder/vb_logotyp" href="bilder/vb_logotyp.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -57,40 +61,46 @@
       </div>
 
       <!-- First Modal -->
+
+
+
       <div id="first-modal" class="modal">
+        <div class="modal-close"></div>
           <div class="modal-content">
             <div class="modal-header">
               <span class="close-one">&times;</span>
               <h2>Factfullness</h2>
             </div>
             <div class="modal-body">
-            <iframe class="size-video" src="https://www.youtube.com/embed/Sm5xF-UYgdg?autoplay=1" frameborder=”0″ allowfullscreen></iframe>
+            <iframe class="size-video" src="https://www.youtube.com/embed/Sm5xF-UYgdg?" frameborder=”0″ allowfullscreen></iframe>
             </div>
           </div>
         </div>
 
       <!-- second Modal -->
       <div id="second-modal" class="modal">
+        <div class="modal-close"></div>
           <div class="modal-content">
             <div class="modal-header">
               <span class="close-two">&times;</span>
               <h2>Freakonomics</h2>
             </div>
             <div class="modal-body">
-            <iframe class="size-video" src="https://www.youtube.com/embed/5UGC2nLnaes?autoplay=1" frameborder=”0″ allowfullscreen></iframe>
+            <iframe class="size-video" src="https://www.youtube.com/embed/5UGC2nLnaes?" frameborder=”0″ allowfullscreen></iframe>
             </div>
           </div>
         </div>
 
       <!-- third Modal -->
       <div id="third-modal" class="modal">
+        <div class="modal-close"></div>
           <div class="modal-content">
             <div class="modal-header">
               <span class="close-three">&times;</span>
               <h2>Elon Musk</h2>
             </div>
             <div class="modal-body">
-            <iframe class="size-video" src="https://www.youtube.com/embed/kBSlQBFvJhk?autoplay=1" frameborder=”0″ allowfullscreen></iframe>
+            <iframe class="size-video" src="https://www.youtube.com/embed/kBSlQBFvJhk?" frameborder=”0″ allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -100,6 +110,16 @@
     <footer class="footer">
       <p class="footer text">Copyright &copy; 2020 VardagsBoosters</p>
     </footer>
+
+    <script>
+        // Desorva adds
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery('.modal-close').click(function(){
+                jQuery('.modal').fadeOut();
+            });
+        });
+    </script>
 
   </body>
 </html>

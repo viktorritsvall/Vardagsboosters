@@ -1,0 +1,459 @@
+/* Gäller hela dokumentet! */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+
+
+
+
+
+
+
+
+
+
+/* Datoranpassad version! */
+  /* Body */
+  }
+  body{
+    font-family: raleway;
+  }
+  
+  /* Navbar */
+  nav{
+    background: #2c3e50;
+    height: 80px;
+    width: 100%;
+  }
+  .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  nav a{
+    color: #2c3e50;
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  /* Titeltext */
+  .title{
+    text-align: center;
+    margin-top: 60px;
+    color: #2c3e50;
+    font-size: 50px;
+  }
+
+  /* Lista */
+  .lista{
+    margin: 0px;
+    padding: 0px;
+    background:#2c3e50;
+    width: 100%;
+  }
+  .position{
+    position: relative;
+    width: 1000px;
+    margin: 100px auto 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .book-points{
+    font-weight: bold;
+  }
+   .books{
+    display: flex;
+    padding: 30px 50px;
+    color: white;
+    transform: .5s;
+    font-size: 25px;
+  }
+  section ul li:nth-child(1){
+    background: #2c3e50;
+  }
+  section ul li:nth-child(2){
+    background: #2c3e50;
+  }
+  section ul li:nth-child(3){
+    background: #2c3e50;
+  }
+  section ul li span:nth-child(1){
+    width: 100px;
+  }
+  section ul li span:nth-child(2){
+    width: 700px;
+  }
+  section ul li span:nth-child(3){
+    width: 100px;
+    text-align: right;
+  }
+  section ul li span:nth-child(4){
+    width: 50px;
+    text-align: right;
+  }
+  section ul li:hover{
+    background: #43759b;
+  }
+  .team{
+    padding-bottom: 150px;
+  }
+
+  /* Footer */
+  .footer {
+    position: fixed;
+    margin-top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    height: 150px;
+  }
+  .footer p{
+    padding-top: 70px;
+  }
+
+  /* MODAL */
+  .modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  /* Modal Content */
+  .modal-content{
+    position: absolute;
+    background-color: #2c3e50;
+    top: 50%;
+    z-index: 30;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .modal-body{
+    margin-bottom: -5px;
+  }
+
+  /* Add Animation */
+    @-webkit-keyframes animatetop{
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+    }
+    @keyframes animatetop{
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* Close Button */
+  .close-one, .close-two, .close-three{
+    color: white;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    bottom: 16px;
+    right: 7px;
+  }
+  .close-one, .close-two, .close-three{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 50px;
+    z-index: 2;
+  }
+  .modal-header{
+    padding: 30px 30px;
+    background-color: #2c3e50;
+    color: white;
+  }
+  .modal-close{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  
+
+
+
+
+
+
+
+
+/* Ipadanpassad version! */
+  @media (max-width: 952px){
+    
+    /* Navbar */
+    .logo{
+      font-size: 30px;
+      padding-left: 50px;
+      cursor: pointer;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+    nav a{
+      color: #2c3e50;
+      font-size: 30px;
+    }
+
+    /* Lista */
+    .lista{
+      margin: 80px;
+      padding: 0;
+      background:#2c3e50;
+      width: 80%;
+    }
+    .position{
+      position: relative;
+      width: 500px;
+      margin: 100px auto 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    section ul li{
+      display: flex;
+      padding: 20px 20px;
+      color: white;
+      transform: .5s;
+      font-size:17px;
+    }
+    section ul li:nth-child(1){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(2){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(3){
+      background: #2c3e50;
+    }
+    section ul li span:nth-child(1){
+      width: 40px;
+    }
+    section ul li span:nth-child(2){
+      width: 300px;
+    }
+    section ul li span:nth-child(3){
+      width: 100px;
+      text-align: right;
+    }
+    section ul li span:nth-child(4){
+      width: 40px;
+      text-align: right;
+    }
+    section ul li:hover{
+      background: #43759b;
+    } 
+    .team{
+      padding-bottom: 150px;
+    }
+    
+    /* Header */
+    header{
+      z-index: 999;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+    .modal-body{
+      margin-bottom: -20px;
+      background-color: #2c3e50;
+      height: 179px;
+    }
+
+    /* Close Button */
+    .close-one, .close-two, .close-three{
+      color: white;
+      float: right;
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* Mobilanpassad version! */
+  @media (max-width: 858px){
+    /* Navbar */
+    .checkbtn{
+      display: block;
+    }
+    header ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    .links:active{
+      background: none;
+      color: #43759b;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+    /* Lista */
+    .lista{
+      margin: 0;
+      padding: 0;
+      background:#2c3e50;
+      width: 100%;
+    }
+    .position{
+      position: relative;
+      width: 350px;
+      margin: 100px auto 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    section ul li{
+      display: flex;
+      padding: 20px 20px;
+      color: white;
+      transform: .5s;
+      font-size:17px;
+    }
+    section ul li:nth-child(1){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(2){
+      background: #2c3e50;
+    }
+    section ul li:nth-child(3){
+      background: #2c3e50;
+    }
+    section ul li span:nth-child(1){
+      width: 40px;
+    }
+    section ul li span:nth-child(2){
+      width: 300px;
+    }
+    section ul li span:nth-child(3){
+      width: 100px;
+      text-align: right;
+    }
+    section ul li span:nth-child(4){
+      width: 50px;
+      text-align: right;
+    }
+    section ul li:hover{
+      background: #43759b;
+    } 
+    .team{
+      padding-bottom: 150px;
+    }
+
+    /* Header */
+    header{
+      z-index: 999;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }  
+    .modal-body{
+      margin-bottom: -20px;
+      background-color: #2c3e50;
+      height: 179px;
+    }
+
+    /* Close Button */
+    .close-one, .close-two, .close-three{
+      color: white;
+      float: right;
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
